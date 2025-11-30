@@ -3,11 +3,11 @@ import type { CardListData, Config, IntegrationUserConfig, ThemeUserConfig } fro
 export const theme: ThemeUserConfig = {
   // === 基础配置 (Basic configuration) ===
   /** 网站标题。将用于元数据和浏览器标签页标题。 */
-  title: '我的 Astro 纯净博客', // <-- 已修改为中文标题
+  title: '狂人日记', // <-- 已修改为中文标题
   /** 将用于首页和版权声明 */
-  author: '博客作者', // <-- 已修改为中文作者名
+  author: '一个隐姓埋名的人', // <-- 已修改为中文作者名
   /** 网站的描述元数据。 */
-  description: '保持饥饿，保持愚蠢。这是一个简单、快速且强大的 Astro 主题。', // <-- 已修改为中文描述
+  description: '保持饥饿，保持愚蠢。', // <-- 已修改为中文描述
   /** 网站的默认 favicon，路径应指向 `public/` 目录下的图片。 */
   favicon: '/favicon/favicon.ico',
   /** 网站的默认社交卡片图片，路径应指向 `public/` 目录下的图片。 */
@@ -50,9 +50,6 @@ export const theme: ThemeUserConfig = {
   header: {
     menu: [
       { title: '博客', link: '/blog' }, // <-- 已修改
-      { title: '文档', link: '/docs' }, // <-- 已修改
-      { title: '项目', link: '/projects' }, // <-- 已修改
-      { title: '友链', link: '/links' }, // <-- 已修改
       { title: '关于', link: '/about' } // <-- 已修改
     ]
   },
@@ -65,8 +62,8 @@ export const theme: ThemeUserConfig = {
     links: [
       // 备案/注册链接
       {
-        title: '萌 ICP 备 114514', // <-- 已修改
-        link: 'https://icp.gov.moe/?keyword=114514',
+        title: '去他娘的备案', // <-- 已修改
+        link: 'https://zoou.net',
         style: 'text-sm' // Uno/TW CSS class
       },
       {
@@ -84,7 +81,7 @@ export const theme: ThemeUserConfig = {
     /** 启用在网站底部显示 “Astro & Pure theme powered” 链接。 */
     credits: true,
     /** 可选的社交媒体账户详情。 */
-    social: { github: 'https://github.com/cworld1/astro-theme-pure' }
+    social: { github: 'https://zoou.net' }
   },
 
   content: {
