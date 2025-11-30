@@ -1,41 +1,41 @@
 import type { CardListData, Config, IntegrationUserConfig, ThemeUserConfig } from 'astro-pure/types'
 
 export const theme: ThemeUserConfig = {
-  // === Basic configuration ===
-  /** Title for your website. Will be used in metadata and as browser tab title. */
-  title: 'Astro Theme Pure',
-  /** Will be used in index page & copyright declaration */
-  author: 'Pure Lab',
-  /** Description metadata for your website. Can be used in page metadata. */
-  description: 'Stay hungry, stay foolish',
-  /** The default favicon for your site which should be a path to an image in the `public/` directory. */
+  // === 基础配置 (Basic configuration) ===
+  /** 网站标题。将用于元数据和浏览器标签页标题。 */
+  title: '我的 Astro 纯净博客', // <-- 已修改为中文标题
+  /** 将用于首页和版权声明 */
+  author: '博客作者', // <-- 已修改为中文作者名
+  /** 网站的描述元数据。 */
+  description: '保持饥饿，保持愚蠢。这是一个简单、快速且强大的 Astro 主题。', // <-- 已修改为中文描述
+  /** 网站的默认 favicon，路径应指向 `public/` 目录下的图片。 */
   favicon: '/favicon/favicon.ico',
-  /** The default social card image for your site which should be a path to an image in the `public/` directory. */
+  /** 网站的默认社交卡片图片，路径应指向 `public/` 目录下的图片。 */
   socialCard: '/images/social-card.png',
-  /** Specify the default language for this site. */
+  /** 指定本站的默认语言。 */
   locale: {
-    lang: 'en-US',
-    attrs: 'en_US',
-    // Date locale
-    dateLocale: 'en-US',
+    lang: 'zh-CN', // <-- 语言修改为中文简体
+    attrs: 'zh_CN',
+    // 日期语言环境
+    dateLocale: 'zh-CN', // <-- 日期语言修改为中文
     dateOptions: {
       day: 'numeric',
       month: 'short',
       year: 'numeric'
     }
   },
-  /** Set a logo image to show in the homepage. */
+  /** 设置在首页显示的 Logo 图片。 */
   logo: {
     src: '/src/assets/avatar.png',
-    alt: 'Avatar'
+    alt: '我的头像' // <-- 已修改
   },
 
-  // === Global configuration ===
+  // === 全局配置 (Global configuration) ===
   titleDelimiter: '•',
   prerender: true,
   npmCDN: 'https://cdn.jsdelivr.net/npm',
 
-  // Still in test
+  // 仍在测试中
   head: [
     /* Telegram channel */
     // {
@@ -46,68 +46,68 @@ export const theme: ThemeUserConfig = {
   ],
   customCss: [],
 
-  /** Configure the header of your site. */
+  /** 配置网站的顶部导航栏。 */
   header: {
     menu: [
-      { title: 'Blog', link: '/blog' },
-      { title: 'Docs', link: '/docs' },
-      { title: 'Projects', link: '/projects' },
-      { title: 'Links', link: '/links' },
-      { title: 'About', link: '/about' }
+      { title: '博客', link: '/blog' }, // <-- 已修改
+      { title: '文档', link: '/docs' }, // <-- 已修改
+      { title: '项目', link: '/projects' }, // <-- 已修改
+      { title: '友链', link: '/links' }, // <-- 已修改
+      { title: '关于', link: '/about' } // <-- 已修改
     ]
   },
 
-  /** Configure the footer of your site. */
+  /** 配置网站的底部。 */
   footer: {
-    // Year format
+    // 年份格式
     year: `© ${new Date().getFullYear()}`,
     // year: `© 2019 - ${new Date().getFullYear()}`,
     links: [
-      // Registration link
+      // 备案/注册链接
       {
-        title: 'Moe ICP 114514',
+        title: '萌 ICP 备 114514', // <-- 已修改
         link: 'https://icp.gov.moe/?keyword=114514',
         style: 'text-sm' // Uno/TW CSS class
       },
       {
-        title: 'Travelling',
+        title: '开往', // <-- 已修改
         link: 'https://www.travellings.cn/go.html',
         style: 'text-sm'
       },
-      // Privacy Policy link
+      // 隐私政策链接
       {
-        title: 'Site Policy',
+        title: '网站政策', // <-- 已修改
         link: '/terms/list',
         pos: 2 // position set to 2 will be appended to copyright line
       }
     ],
-    /** Enable displaying a “Astro & Pure theme powered” link in your site’s footer. */
+    /** 启用在网站底部显示 “Astro & Pure theme powered” 链接。 */
     credits: true,
-    /** Optional details about the social media accounts for this site. */
+    /** 可选的社交媒体账户详情。 */
     social: { github: 'https://github.com/cworld1/astro-theme-pure' }
   },
 
   content: {
-    /** External links configuration */
+    /** 外部链接配置 */
     externalLinks: {
-      content: ' ↗',
-      /** Properties for the external links element */
+      content: ' ↗', // 保持箭头符号
+      /** 外部链接元素的属性 */
       properties: {
         style: 'user-select:none'
       }
     },
-    /** Blog page size for pagination (optional) */
+    /** 分页的博客页面大小 (可选) */
     blogPageSize: 8,
-    // Currently support weibo, x, bluesky
+    // 当前支持 weibo, x, bluesky
     share: ['weibo', 'x', 'bluesky']
   }
 }
 
 export const integ: IntegrationUserConfig = {
-  // Links management
+  // 友链管理
   // See: https://astro-pure.js.org/docs/integrations/links
   links: {
-    // Friend logbook
+    // 友链日志
     logbook: [
       { date: '2025-03-16', content: 'Is there a leakage?' },
       { date: '2025-03-16', content: 'A leakage of what?' },
@@ -115,19 +115,19 @@ export const integ: IntegrationUserConfig = {
       { date: '2025-03-16', content: 'Must be the water.' },
       { date: '2025-03-16', content: "Let's add that to the words of wisdom." }
     ],
-    // Yourself link info
+    // 你的友链信息
     applyTip: [
-      { name: 'Name', val: theme.title },
-      { name: 'Desc', val: theme.description || 'Null' },
-      { name: 'Link', val: 'https://astro-pure.js.org/' },
-      { name: 'Avatar', val: 'https://astro-pure.js.org/favicon/favicon.ico' }
+      { name: '名称', val: theme.title }, // <-- 已修改
+      { name: '描述', val: theme.description || '无' }, // <-- 已修改
+      { name: '链接', val: 'https://astro-pure.js.org/' }, // <-- 已修改
+      { name: '头像', val: 'https://astro-pure.js.org/favicon/favicon.ico' } // <-- 已修改
     ],
-    // Cache avatars in `public/avatars/` to improve user experience.
+    // 在 `public/avatars/` 中缓存头像以改善用户体验。
     cacheAvatar: false
   },
-  // Enable page search function
+  // 启用页面搜索功能
   pagefind: true,
-  // Add a random quote to the footer (default on homepage footer)
+  // 在底部添加随机名言 (默认在首页底部)
   // See: https://astro-pure.js.org/docs/integrations/advanced#web-content-render
   quote: {
     // Hitokoto
@@ -142,39 +142,39 @@ export const integ: IntegrationUserConfig = {
     server: 'https://dummyjson.com/quotes/random',
     target: `(data) => (data.quote.length > 80 ? \`\${data.quote.slice(0, 80)}...\` : data.quote || 'Error')`
   },
-  // UnoCSS typography
+  // UnoCSS 排版
   // See: https://unocss.dev/presets/typography
   typography: {
     class: 'prose text-base',
-    // The style of blockquote font, normal or italic (default to italic in typography)
+    // blockquote 字体样式，normal 或 italic (默认 italic)
     blockquoteStyle: 'italic',
-    // The style of inline code block, code or modern (default to code in typography)
+    // 行内代码块样式，code 或 modern (默认 code)
     inlineCodeBlockStyle: 'modern'
   },
-  // A lightbox library that can add zoom effect
+  // 可以添加缩放效果的灯箱库
   // See: https://astro-pure.js.org/docs/integrations/others#medium-zoom
   mediumZoom: {
-    enable: true, // disable it will not load the whole library
+    enable: true, // 禁用它将不会加载整个库
     selector: '.prose .zoomable',
     options: {
       className: 'zoomable'
     }
   },
-  // Comment system
+  // 评论系统
   waline: {
     enable: true,
-    // Server service link
+    // 服务器服务链接
     server: 'https://astro-theme-pure-waline.arthals.ink/',
-    // Refer https://waline.js.org/en/guide/features/emoji.html
+    // 参见 https://waline.js.org/en/guide/features/emoji.html
     emoji: ['bmoji', 'weibo'],
-    // Refer https://waline.js.org/en/reference/client/props.html
+    // 参见 https://waline.js.org/en/reference/client/props.html
     additionalConfigs: {
       // search: false,
       pageview: true,
       comment: true,
       locale: {
-        reaction0: 'Like',
-        placeholder: 'Welcome to comment. (Email to receive replies. Login is unnecessary)'
+        reaction0: '喜欢', // <-- 已修改
+        placeholder: '欢迎评论。 (填写邮箱即可接收回复通知，无需登录)' // <-- 已修改
       },
       imageUploader: false
     }
@@ -182,22 +182,22 @@ export const integ: IntegrationUserConfig = {
 }
 
 export const terms: CardListData = {
-  title: 'Terms content',
+  title: '条款内容', // <-- 已修改
   list: [
     {
-      title: 'Privacy Policy',
+      title: '隐私政策', // <-- 已修改
       link: '/terms/privacy-policy'
     },
     {
-      title: 'Terms and Conditions',
+      title: '条款与条件', // <-- 已修改
       link: '/terms/terms-and-conditions'
     },
     {
-      title: 'Copyright',
+      title: '版权声明', // <-- 已修改
       link: '/terms/copyright'
     },
     {
-      title: 'Disclaimer',
+      title: '免责声明', // <-- 已修改
       link: '/terms/disclaimer'
     }
   ]
