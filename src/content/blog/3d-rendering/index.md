@@ -1,16 +1,20 @@
 ---
-title: 'What Is 3D Rendering? Complete Guide to 3D Visualization'
+title: 到底是坑害国人，还是遥遥领先？
 publishDate: 2025-02-09
 updatedDate: 2025-02-24
-description: '3D imagery has the power to bring cinematic visions to life and help accurately plan tomorrow’s cityscapes. Here, 3D expert Ricardo Ortiz explains how it works.'
+description: 鸿蒙党，华为奴，真的是无脑基本盘，华为全靠这些人积累财富。
 tags:
-  - Example
-  - 3D
-language: 'English'
-heroImage: { src: './thumbnail.jpg', color: '#D58388' }
+  - 鸿蒙
+  - 华为
+  - 基本盘
+  - 遥遥领先
+language: 中文
+heroImage:
+  src: ./thumbnail.jpg
+  color: "#D58388"
 ---
 
-3D rendering is all around us. From huge action movies to car commercials to previews of upcoming buildings or product designs, 3D visualization has become so widespread and realistic that you probably don’t even know it’s there.
+我是真看不起华为鸿蒙党，每次发布会吹的低智宣传，竟然有那么多人看得热血沸腾；
 
 In this introductory piece, Chaos’ Ricardo Ortiz explains the basics of 3D rendering, from the computational methods that create imagery to the artistic techniques that create great computer-generated (CG) content and its various uses.
 
@@ -20,8 +24,8 @@ Put simply, 3D rendering is the process of using a computer to generate a 2D ima
 
 To generate an image, specific methodologies and special software and hardware are used. Therefore, we need to understand that 3D rendering is a process—the one that builds the image.
 
-![alt text](./nikola-arsov-still-life-interior-design-vray-3ds-max-05-930px.jpg)
 
+![](ccc24eae-1b00-d248-ee51-4ce7dc0bbef6.jpg)
 ## Types of 3D rendering
 
 We can create different types of rendered image; they can be realistic or non-realistic.
